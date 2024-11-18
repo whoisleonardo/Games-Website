@@ -87,11 +87,11 @@ main{
         font-weight: 600;
     }
 }
-#sidebar ul li .active a{
+#sidebar ul li.ativo a {
     color: var(--accent-clr);
-    svg{
-        fill: var(--accent-clr);
-    }
+}
+#sidebar ul li.ativo svg {
+    fill: var(--accent-clr);
 }
 #sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
     border-radius: .5em;
@@ -239,4 +239,56 @@ h2 {
     object-fit: cover; 
     margin-top: 10px;
     border-radius: 5%; 
+}
+.gameplay #colunas {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.gameplay .coluna {
+    display: flex;          
+    flex-direction: column;     
+    align-items: center;      
+    justify-content: center;     
+    text-align: center;          
+    margin: 20px 0;              
+    padding: 10px; 
+}
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #sidebar.close {
+        width: 50px;
+    }
+
+    #sidebar a,
+    #sidebar .dropdown-btn,
+    #sidebar .logo {
+        padding: 0.5em;
+    }
+
+    main {
+        margin-left: 200px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #colunas {
+        flex-direction: column;
+    }
+
+    #colunas > div {
+        margin-bottom: 20px;
+    }
+
+    .jogos {
+        height: 150px;
+    }
 }
