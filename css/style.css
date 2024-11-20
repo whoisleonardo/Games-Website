@@ -316,6 +316,42 @@ button a{
     color: var(--text-clr);
     text-decoration: none;
 }
+.home #colunas {
+    display: flex;    
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: -30px;
+}
+.home #colunas .coluna {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 10px; 
+    align-items: center; 
+    padding: 80px;
+}
+.home #colunas .coluna h3 {
+    margin-bottom: 30px;
+}
+.home #colunas .coluna p {
+    margin-bottom: 30px; 
+}
+.home .input {
+    font-size: 1.2rem;
+    color: var(--text-clr);
+    background-color: var(--base-variant);
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
+}
+.home .input:hover {
+    box-shadow: 0 0 0 .15vw var(--accent-clr);
+}
+
+.home .input:focus {
+    box-shadow: 0 0 0 .15vw var(--primary-clr);
+}
 @media (max-width: 768px) {
     #sidebar {
         width: 200px;
