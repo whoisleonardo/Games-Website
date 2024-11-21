@@ -44,3 +44,40 @@ themeSwitch.addEventListener("click", () => {
     lightmode = localStorage.getItem('lightmode')
     lightmode !== "active" ? enableLightmode() : disableLightmode()
 })
+
+//recomendação
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const botao = document.getElementById("botao");
+    const inputJogo = document.querySelector("input[name='text']");
+    
+    botao.addEventListener("click", function() {
+        const nomeJogo = inputJogo.value.trim();
+        
+        if (nomeJogo !== "") {
+            console.log("Você recomendou o jogo: " + nomeJogo);
+            inputJogo.value = "";
+        } else {
+            alert("Por favor, digite o nome de um jogo.");
+        }
+    });
+});
+
+
+//contato
+
+function enviar(event) {
+    event.preventDefault();
+    
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const problemaSelect = document.getElementById('problema');
+        const problema = problemaSelect.options[problemaSelect.selectedIndex].text;
+        const textarea = document.getElementById('textarea').value;
+
+        document.getElementById('nomec').innerText = `Nome: ${nome}`; 
+        document.getElementById('emailc').innerText = `Email: ${email}`;
+        document.getElementById('boc').innerText = `Problema: ${problema}`;
+        document.getElementById('men').innerText = `Mensagem: ${textarea}`;
+    }
