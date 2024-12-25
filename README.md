@@ -37,7 +37,10 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-This project is a static website, built using HTML and CSS. Simply open the index.html file in any modern web browser to view the site. The site is designed to be responsive, ensuring it looks good on both desktop and mobile devices.
+- Navigation: Use the sidebar to navigate between different sections of the website.
+- Game Recommendations: Enter the name of a game in the input field on the Home page and click "Enviar" to submit your recommendation.
+- Soundtracks: Explore the soundtracks of various games embedded from Spotify.
+- Wiki: Access detailed information about each game, including links to their respective wikis
 
 ## Contributing
 This project was created as part of an exam and is not open for contributions at this time. However, feel free to fork the repository and make any improvements or additions you like.
@@ -45,8 +48,3 @@ This project was created as part of an exam and is not open for contributions at
 ## License
 
 This project is licensed under the MIT License — feel free to use or modify the code as needed.
-
-## Technologies
-
-- HTML5: Structure of the web pages.
-- CSS3: Styling and layout, including responsive design using media queries.
